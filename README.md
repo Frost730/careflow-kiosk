@@ -25,8 +25,22 @@ patient-kiosk/
 ├── frontend/
 │   ├── src/
 │   │   ├── components/
+│   │   │   ├── Icons.jsx            # Reusable SVG icon components
+│   │   │   ├── ProtectedRoute.jsx   # Secured admin router auth guard
 │   │   │   └── VirtualKeyboard.jsx  # Touch virtual keyboard (QWERTY & Numeric)
-│   │   ├── App.jsx           # Main React Router pages, login views, and auth guards
+│   │   ├── pages/
+│   │   │   ├── AdminDashboard.jsx   # Admin management waitlist grid and stats
+│   │   │   ├── AdminLogin.jsx       # Admin portal credentials check
+│   │   │   ├── DepartmentSelection.jsx # Department card selection step
+│   │   │   ├── DoctorSelection.jsx  # Physician card selection step
+│   │   │   ├── RegistrationForm.jsx # Patient details input page
+│   │   │   ├── TokenConfirmation.jsx # Token receipt and print layout
+│   │   │   └── WelcomeScreen.jsx    # Home starting screen
+│   │   ├── utils/
+│   │   │   ├── audio.js             # Web Audio API clicks and chimes
+│   │   │   └── constants.js         # Core constant configurations
+│   │   ├── App.css           # React template styles
+│   │   ├── App.jsx           # Clean root orchestrator and route declarations
 │   │   ├── index.css         # Custom CSS style system and accessibility modes
 │   │   └── main.jsx          # React app mounter
 │   ├── index.html            # App entrypoint (SEO metadata optimized)
